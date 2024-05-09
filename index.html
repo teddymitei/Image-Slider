@@ -77,6 +77,13 @@
             let items = document.querySelectorAll('.item')
             document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
         })
-            </script>
-        </body>
-        </html>
+
+        // Automatic sliding after 10 seconds
+        setInterval(function() {
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').appendChild(items[0])
+        }, 30000);
+
+    </script>
+</body>
+</html>
