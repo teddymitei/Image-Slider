@@ -69,10 +69,23 @@ body{
     left: 100px;
     width: 300px;
     text-align: left;
-    color: #eee;
+    color: skyblue;
     transform: translate(0, -50%);
     font-family: system-ui;
     display: none;
+}
+
+.item .content button{
+    background: transparent;
+    border: 1px solid lightblue;
+    color: skyblue;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.item .content button:hover{
+    background: skyblue;
+    color: #000;
 }
 
 
@@ -137,9 +150,10 @@ body{
     margin: 0 5px;
     border: 1px solid #000;
     transition: 0.3s;
+    background: skyblue;
 }
 
 .button button:hover{
-    background: #ababab;
+    background: rgb(135, 171, 185);
     color: #fff;
 }
