@@ -156,3 +156,63 @@ body{
     background: rgb(135, 171, 185);
     color: #fff;
 }
+
+@media (max-width: 1200px) {
+    .container {
+        width: 800px;
+    }
+
+    .slide .item {
+        width: 160px;
+        height: 240px;
+    }
+
+    .item .content {
+        left: 80px;
+        width: 240px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 600px;
+    }
+
+    .slide .item {
+        width: 120px;
+        height: 180px;
+    }
+
+    .item .content {
+        left: 60px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        min-height: 400px;
+    }
+
+    .slide .item {
+        width: 100%;
+        height: auto;
+        position: relative;
+        transform: none;
+        top: 0;
+        left: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .item .content {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        transform: none;
+        display: block;
+    }
+}
